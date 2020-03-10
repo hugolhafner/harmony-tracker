@@ -1,0 +1,41 @@
+{
+  "name": "harmony-tracker",
+  "version": "1.0.5",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "dev:watch": "tsc -w",
+    "test": "jest",
+    "postinstall": "npm run build"
+  },
+  "author": "Hugo Hafner",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/better-queue": "^3.8.2",
+    "@types/uuid": "^7.0.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.5.3",
+    "typescript-map": "^0.0.7",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-obfuscator": "^0.25.4"
+  },
+  "dependencies": {
+    "@types/node": "^12.7.2",
+    "axios": "^0.19.2",
+    "fastq": "^1.6.1"
+  }
+}
